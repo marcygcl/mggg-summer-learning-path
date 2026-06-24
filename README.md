@@ -1,41 +1,33 @@
-# MGGG Summer Learning Path
+# MGGG Summer Internship Learning Path
 
-A structured learning path for replicating MGGG's electoral analysis methodology.
+Personal learning repository documenting the journey of replicating electoral analysis for Kansas City.
 
-## Quick Navigation
+**Author:** Marcy Castro Livano
+**Lab:** MGGG Data and Democracy Lab
+**Duration:** Summer 2026 (10 weeks)
+**Focus:** Electoral analysis replication, RCV/STV modeling, census data fundamentals
 
-- **Learning Journey:** See `MARCY_CASTRO_2026/README.md`
-- **Weekly Progress:** See `MARCY_CASTRO_2026/WEEKLY_PROGRESS/`
-- **Key Discoveries:** See `MARCY_CASTRO_2026/DISCOVERIES.md`
-- **Tools & Resources:** See `SHARED_RESOURCES/`
-- **Glossary (ES/EN):** See `SHARED_RESOURCES/Glossary-ES-EN.md`
+## Purpose
 
-## Related Repositories
+This learning path documents:
+1. Week-by-week progress in electoral analysis
+2. Foundation building in census data and electoral systems
+3. Replication methodology from MGGG's published reports
+4. Case study: Kansas City electoral analysis (RCV/STV counterfactual)
 
-- [summer_internship_mggg26](https://github.com/marcygcl/summer_internship_mggg26) - Portfolio website
-- [KC-Electoral-Analysis](https://github.com/marcygcl/KC-Electoral-Analysis) - Main project repo
 
-## Learning Objectives
+## Repository Structure
 
-By the end of this internship, I will be able to:
-
-- ✅ Explain VAP, CVAP, and demographic categories from Census data
-- ✅ Understand electoral systems (plurality, IRV, STV)
-- ✅ Navigate IPUMS NHGIS for historical Census data
-- ✅ Define parameters for VoteKit simulations
-- ✅ Run electoral analysis using GerryChain/VoteKit
-- ✅ Replicate MGGG's methodology for new jurisdictions
-
-## Status
-
-| Week | Topic | Status |
-|------|-------|--------|
-| 1-2 | Foundations | ✅ Completed |
-| 3 | Data Collection | 🟡 In Progress |
-| 4 | Methodology | ⬜ Not Started |
-| 5-6 | Analysis | ⬜ Not Started |
-| 7 | Reporting | ⬜ Not Started |
-
----
-
-Last updated: 2026-06-24
+```
+mggg-summer-learning-path/
+├── MARCY_CASTRO_2026/          # Personal learning journey
+│   ├── WEEKLY_PROGRESS/        # Week-by-week content
+│   ├── DISCOVERIES.md          # Aha moments & key insights
+│   ├── QUESTIONS.md            # Pending questions
+│   └── LEARNING-MATERIALS/     # Video links & resources
+├── LEARNING_PATHS/             # Structured learning paths
+├── SHARED_RESOURCES/           # Tools, glossary, data sources
+├── NOTEBOOKS/                  # Links to relevant notebooks
+├── VIDEOS/                     # NotebookLM video index
+└── CHANGELOG.md                # Progress updates
+```
