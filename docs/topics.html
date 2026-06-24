@@ -22,70 +22,68 @@
         <section class="topics">
             <div class="container">
                 <h1>Topics I'm Learning</h1>
-                <p class="subtitle">Click to expand and explore</p>
+                <p class="subtitle">Click a card to open its notebook</p>
 
-                <div class="topics-list">
-                    <!-- Topic 1 -->
-                    <div class="topic-accordion">
-                        <button class="topic-header" onclick="toggleTopic(this)">
-                            <span class="icon">▶</span>
-                            <h3>📊 Census Data Fundamentals</h3>
-                        </button>
-                        <div class="topic-content" style="display:none;">
-                            <p>
-                                Understanding Census data: VAP, CVAP, demographic categories, how to work with Census tracts.
-                            </p>
-                            <p><strong>Resources:</strong> VAP-CVAP.pdf, IPUMS NHGIS</p>
-                            <p><strong>Status:</strong> [To be filled]</p>
-                        </div>
-                    </div>
+                <div class="topics-grid">
+                    <a class="topic-card" href="topics/census-data.html">
+                        <div class="topic-card-icon">📊</div>
+                        <h3>Census Data Fundamentals</h3>
+                        <p>VAP, CVAP, demographic categories, and working with Census tracts.</p>
+                    </a>
 
-                    <!-- Topic 2 -->
-                    <div class="topic-accordion">
-                        <button class="topic-header" onclick="toggleTopic(this)">
-                            <span class="icon">▶</span>
-                            <h3>🗳️ Electoral Systems</h3>
-                        </button>
-                        <div class="topic-content" style="display:none;">
-                            <p>
-                                Comparing electoral systems: Plurality, Instant Runoff Voting (IRV), Single Transferable Vote (STV).
-                            </p>
-                            <p><strong>Resources:</strong> Lowell Report, Massachusetts RCV Report</p>
-                            <p><strong>Status:</strong> [To be filled]</p>
-                        </div>
-                    </div>
+                    <a class="topic-card" href="topics/electoral-systems.html">
+                        <div class="topic-card-icon">🗳️</div>
+                        <h3>Electoral Systems</h3>
+                        <p>Plurality, Instant Runoff Voting (IRV), and Single Transferable Vote (STV).</p>
+                    </a>
 
-                    <!-- Topic 3 -->
-                    <div class="topic-accordion">
-                        <button class="topic-header" onclick="toggleTopic(this)">
-                            <span class="icon">▶</span>
-                            <h3>⚙️ VoteKit & Methodology</h3>
-                        </button>
-                        <div class="topic-content" style="display:none;">
-                            <p>
-                                Learning to use VoteKit for voter preference modeling and electoral simulations.
-                            </p>
-                            <p><strong>Resources:</strong> VoteKit GitHub, Training Materials</p>
-                            <p><strong>Status:</strong> [To be filled]</p>
-                        </div>
-                    </div>
+                    <a class="topic-card" href="topics/votekit.html">
+                        <div class="topic-card-icon">⚙️</div>
+                        <h3>VoteKit Methodology</h3>
+                        <p>Modeling voter preferences and simulating elections with VoteKit.</p>
+                    </a>
 
-                    <!-- Topic 4 -->
-                    <div class="topic-accordion">
-                        <button class="topic-header" onclick="toggleTopic(this)">
-                            <span class="icon">▶</span>
-                            <h3>🗺️ Kansas City Analysis</h3>
-                        </button>
-                        <div class="topic-content" style="display:none;">
-                            <p>
-                                Replicating MGGG's methodology for Kansas City: data collection, modeling, analysis.
-                            </p>
-                            <p><strong>Resources:</strong> [To be filled]</p>
-                            <p><strong>Status:</strong> [To be filled]</p>
-                        </div>
-                    </div>
+                    <a class="topic-card" href="topics/gerrychain.html">
+                        <div class="topic-card-icon">🔗</div>
+                        <h3>GerryChain Basics</h3>
+                        <p>Graphs, ensembles, and the ReCom algorithm for districting analysis.</p>
+                    </a>
 
-                    <!-- Add more topics as needed -->
+                    <a class="topic-card" href="topics/data-analysis.html">
+                        <div class="topic-card-icon">📈</div>
+                        <h3>Data Analysis</h3>
+                        <p>Cleaning, joining, and exploring electoral and demographic data.</p>
+                    </a>
+
+                    <a class="topic-card" href="topics/kansas-city.html">
+                        <div class="topic-card-icon">🗺️</div>
+                        <h3>Kansas City Specifics</h3>
+                        <p>Replicating MGGG's methodology for the Kansas City case study.</p>
+                    </a>
+
+                    <a class="topic-card" href="topics/data-sources.html">
+                        <div class="topic-card-icon">💾</div>
+                        <h3>Data Sources</h3>
+                        <p>IPUMS NHGIS, ACS, OpenElections, TIGER/Line shapefiles, and more.</p>
+                    </a>
+
+                    <a class="topic-card" href="topics/simulation.html">
+                        <div class="topic-card-icon">🔬</div>
+                        <h3>Simulation Methods</h3>
+                        <p>Preference generation models: Plackett-Luce, Bradley-Terry, Cambridge.</p>
+                    </a>
+
+                    <a class="topic-card" href="topics/reporting.html">
+                        <div class="topic-card-icon">📝</div>
+                        <h3>Report Writing</h3>
+                        <p>Structuring findings, tables, and visualizations for non-experts.</p>
+                    </a>
+
+                    <a class="topic-card" href="topics/glossary.html">
+                        <div class="topic-card-icon">🎓</div>
+                        <h3>Key Concepts Glossary</h3>
+                        <p>Quick reference for the core terms across all topics (ES/EN).</p>
+                    </a>
                 </div>
             </div>
         </section>

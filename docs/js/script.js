@@ -26,4 +26,21 @@ document.querySelectorAll('.week-button').forEach(button => {
     });
 });
 
+// Toggle collapsible code blocks (Jupyter-style cells)
+function toggleCode(button) {
+    button.classList.toggle('active');
+    const code = button.nextElementSibling;
+    const arrow = button.querySelector('.code-arrow');
+    const isHidden = code.style.display === 'none' || code.style.display === '';
+    if (isHidden) {
+        code.style.display = 'block';
+        button.childNodes[button.childNodes.length - 1].textContent = ' Hide code';
+        if (arrow) arrow.textContent = '▼';
+    } else {
+        code.style.display = 'none';
+        button.childNodes[button.childNodes.length - 1].textContent = ' Show code';
+        if (arrow) arrow.textContent = '▶';
+    }
+}
+
 console.log('Learning Path Interactive Site Loaded');

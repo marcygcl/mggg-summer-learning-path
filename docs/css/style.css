@@ -410,3 +410,241 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* ===================================================================
+   TIMELINE ENHANCEMENTS (caminito / path look)
+   =================================================================== */
+.timeline-card {
+    transition: transform 0.3s ease;
+}
+
+.week-button {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.week-button:hover {
+    box-shadow: 0 10px 24px rgba(24, 95, 165, 0.25);
+}
+
+.timeline-item:hover .timeline-dot {
+    transform: translateX(-50%) scale(1.4);
+    transition: transform 0.3s ease;
+}
+
+.week-preview {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+}
+
+.week-preview p {
+    margin-bottom: 0.25rem;
+}
+
+/* ===================================================================
+   TOPICS CARD GRID
+   =================================================================== */
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.topic-card {
+    display: block;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.75rem;
+    text-decoration: none;
+    color: var(--dark);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.topic-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(24, 95, 165, 0.18);
+    border-color: var(--primary);
+}
+
+.topic-card-icon {
+    font-size: 2.25rem;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.topic-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.topic-card p {
+    color: var(--dark);
+    font-size: 0.95rem;
+}
+
+/* ===================================================================
+   NOTEBOOK-STYLE TOPIC PAGES
+   =================================================================== */
+.notebook {
+    padding: 40px 20px;
+}
+
+.notebook-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.notebook-toc {
+    position: sticky;
+    top: 90px;
+    background: var(--light);
+    border-radius: 10px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--secondary);
+}
+
+.notebook-toc h3 {
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.notebook-toc ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.notebook-toc li {
+    margin-bottom: 0.5rem;
+}
+
+.notebook-toc a {
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.notebook-toc a:hover {
+    color: var(--primary);
+}
+
+.toc-back {
+    display: inline-block;
+    font-size: 0.85rem;
+    padding: 8px 16px;
+}
+
+.notebook-title {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+.topic-intro {
+    color: var(--dark);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.nb-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.nb-section h2 {
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+}
+
+/* Collapsible code cell */
+.code-cell {
+    margin: 1rem 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.code-toggle {
+    width: 100%;
+    text-align: left;
+    background: var(--light);
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s;
+}
+
+.code-toggle:hover {
+    background: #e8e5da;
+}
+
+.code-toggle.active {
+    border-bottom: 1px solid var(--border);
+}
+
+.code-arrow {
+    display: inline-block;
+    transition: transform 0.2s;
+    color: var(--accent);
+}
+
+.code-block {
+    margin: 0;
+    background: #1e1e2e;
+    color: #e4e4ef;
+    padding: 1.25rem;
+    overflow-x: auto;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.code-block code {
+    background: none;
+    color: inherit;
+    white-space: pre;
+}
+
+/* ===================================================================
+   RESPONSIVE: grids 3 -> 2 -> 1, notebook stacks
+   =================================================================== */
+@media (max-width: 1024px) {
+    .topics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .topics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .notebook-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .notebook-toc {
+        position: static;
+        top: auto;
+    }
+}
