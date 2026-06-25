@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temas que estoy aprendiendo — Diario de aprendizaje</title>
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', t);
+            } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
+        })();
+    </script>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Navegación principal">
+            <a class="wordmark" href="index.html">Learning&nbsp;Path</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="journey.html">Recorrido</a></li>
+                <li><a href="topics.html" aria-current="page">Temas</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma"><span class="lang-en">EN</span><span class="lang-sep">/</span><span class="lang-es">ES</span></button>
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a tema oscuro">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- TRANSLATE FROM: /en/topics.html -->
+        <section>
+            <div class="container container--wide">
+                <div class="section-head">
+                    <p class="eyebrow">Un cuaderno que crece</p>
+                    <h1 class="section-title">Temas que estoy aprendiendo</h1>
+                    <p class="section-sub">Cada uno abre un cuaderno que amplío sobre la marcha.</p>
+                </div>
+
+                <div class="topic-grid">
+                    <a class="topic-card reveal" href="topics/census-data.html">
+                        <span class="t-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+                        <h3>Fundamentos de datos del censo</h3>
+                        <p>[ES — por traducir]</p>
+                        <span class="t-open">Abrir →</span>
+                    </a>
+                    <a class="topic-card reveal" href="topics/electoral-systems.html">
+                        <span class="t-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+                        <h3>Sistemas electorales</h3>
+                        <p>[ES — por traducir]</p>
+                        <span class="t-open">Abrir →</span>
+                    </a>
+                    <a class="topic-card reveal" href="topics/votekit.html">
+                        <span class="t-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-2.82 1.17V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 7 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 14H4.5a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 6 7"/></svg></span>
+                        <h3>Metodología de VoteKit</h3>
+                        <p>[ES — por traducir]</p>
+                        <span class="t-open">Abrir →</span>
+                    </a>
+                    <a class="topic-card reveal" href="topics/gerrychain.html">
+                        <span class="t-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 6h10M6 8l5 8M18 8l-5 8"/></svg></span>
+                        <h3>Fundamentos de GerryChain</h3>
+                        <p>[ES — por traducir]</p>
+                        <span class="t-open">Abrir →</span>
+                    </a>
+                    <a class="topic-card reveal" href="topics/data-analysis.html">
+                        <span class="t-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></span>
+                        <h3>Análisis de datos</h3>
+                        <p>[ES — por traducir]</p>
+                        <span class="t-open">Abrir →</span>
+                    </a>
+                    <a class="topic-card reveal" href="topics/kansas-city.html">
+                        <span class="t-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                        <h3>Particularidades de Kansas City</h3>
+                        <p>[ES — por traducir]</p>
+                        <span class="t-open">Abrir →</span>
+                    </a>
+                    <a class="topic-card reveal" href="topics/data-sources.html">
+                        <span class="t-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg></span>
+                        <h3>Fuentes de datos</h3>
+                        <p>[ES — por traducir]</p>
+                        <span class="t-open">Abrir →</span>
+                    </a>
+                    <a class="topic-card reveal" href="topics/simulation.html">
+                        <span class="t-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v5.5L5 18a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18l-5-9.5V3"/></svg></span>
+                        <h3>Métodos de simulación</h3>
+                        <p>[ES — por traducir]</p>
+                        <span class="t-open">Abrir →</span>
+                    </a>
+                    <a class="topic-card reveal" href="topics/reporting.html">
+                        <span class="t-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></span>
+                        <h3>Redacción de informes</h3>
+                        <p>[ES — por traducir]</p>
+                        <span class="t-open">Abrir →</span>
+                    </a>
+                    <a class="topic-card reveal" href="topics/glossary.html">
+                        <span class="t-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                        <h3>Glosario de conceptos clave</h3>
+                        <p>[ES — por traducir]</p>
+                        <span class="t-open">Abrir →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Marcy Castro Livano</span>
+            <span>MGGG Data and Democracy Lab</span>
+        </div>
+    </footer>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/lang.js"></script>
+    <script src="../js/reveal.js"></script>
+</body>
+</html>

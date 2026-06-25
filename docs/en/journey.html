@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The path so far — Learning Journal</title>
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', t);
+            } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
+        })();
+    </script>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="wordmark" href="index.html">Learning&nbsp;Path</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="journey.html" aria-current="page">Journey</a></li>
+                <li><a href="topics.html">Topics</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language"><span class="lang-en">EN</span><span class="lang-sep">/</span><span class="lang-es">ES</span></button>
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="section-head path-intro">
+                    <p class="eyebrow">Ten weeks, one trail</p>
+                    <h1 class="section-title">The path so far</h1>
+                    <p class="section-sub">Each step is a week. Hover a card for what it held.</p>
+                </div>
+
+                <div class="path">
+                    <svg class="path-svg" viewBox="0 0 100 1800" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M 50 0 C 26 0, 26 90, 50 90 C 74 90, 74 270, 50 270 C 26 270, 26 450, 50 450 C 74 450, 74 630, 50 630 C 26 630, 26 810, 50 810 C 74 810, 74 990, 50 990 C 26 990, 26 1170, 50 1170 C 74 1170, 74 1350, 50 1350 C 26 1350, 26 1530, 50 1530 C 74 1530, 74 1710, 50 1710 C 26 1710, 26 1800, 50 1800"/>
+                    </svg>
+
+                    <ul class="path-steps">
+                        <li class="path-step left is-done" style="top:90px">
+                            <span class="path-dot" aria-hidden="true"></span>
+                            <a class="path-card" href="weeks/week-1.html">
+                                <span class="week-no">Week 1</span>
+                                <h3 class="week-topic">Foundations</h3>
+                                <span class="status-pill">Done</span>
+                                <div class="path-reveal">
+                                    <div class="path-keywords"><span class="kw">VAP</span><span class="kw">CVAP</span><span class="kw">ordering</span></div>
+                                    <p class="path-ach">Mapped the census building blocks.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="path-step right is-done" style="top:270px">
+                            <span class="path-dot" aria-hidden="true"></span>
+                            <a class="path-card" href="weeks/week-2.html">
+                                <span class="week-no">Week 2</span>
+                                <h3 class="week-topic">Electoral systems</h3>
+                                <span class="status-pill">Done</span>
+                                <div class="path-reveal">
+                                    <div class="path-keywords"><span class="kw">Plurality</span><span class="kw">IRV</span><span class="kw">STV</span></div>
+                                    <p class="path-ach">Worked IRV &amp; a Droop quota by hand.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="path-step left is-active" style="top:450px">
+                            <span class="path-dot" aria-hidden="true"></span>
+                            <a class="path-card" href="weeks/week-3.html">
+                                <span class="week-no">Week 3</span>
+                                <h3 class="week-topic">Data collection</h3>
+                                <span class="status-pill">In progress</span>
+                                <div class="path-reveal">
+                                    <div class="path-keywords"><span class="kw">IPUMS</span><span class="kw">ACS</span><span class="kw">shapefiles</span></div>
+                                    <p class="path-ach">Gathering Kansas City inputs.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="path-step right is-upcoming" style="top:630px">
+                            <span class="path-dot" aria-hidden="true"></span>
+                            <a class="path-card" href="weeks/week-4.html">
+                                <span class="week-no">Week 4</span>
+                                <h3 class="week-topic">Methodology</h3>
+                                <span class="status-pill">Upcoming</span>
+                                <div class="path-reveal">
+                                    <div class="path-keywords"><span class="kw">blocs</span><span class="kw">cohesion</span><span class="kw">turnout</span></div>
+                                    <p class="path-ach">Defining the model's assumptions.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="path-step left is-upcoming" style="top:810px">
+                            <span class="path-dot" aria-hidden="true"></span>
+                            <a class="path-card" href="weeks/week-5.html">
+                                <span class="week-no">Week 5</span>
+                                <h3 class="week-topic">Simulation setup</h3>
+                                <span class="status-pill">Upcoming</span>
+                                <div class="path-reveal">
+                                    <div class="path-keywords"><span class="kw">VoteKit</span><span class="kw">profiles</span></div>
+                                    <p class="path-ach">Standing up the tooling.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="path-step right is-upcoming" style="top:990px">
+                            <span class="path-dot" aria-hidden="true"></span>
+                            <a class="path-card" href="weeks/week-6.html">
+                                <span class="week-no">Week 6</span>
+                                <h3 class="week-topic">Running models</h3>
+                                <span class="status-pill">Upcoming</span>
+                                <div class="path-reveal">
+                                    <div class="path-keywords"><span class="kw">ensembles</span><span class="kw">runs</span></div>
+                                    <p class="path-ach">Producing the first outputs.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="path-step left is-upcoming" style="top:1170px">
+                            <span class="path-dot" aria-hidden="true"></span>
+                            <a class="path-card" href="weeks/week-7.html">
+                                <span class="week-no">Week 7</span>
+                                <h3 class="week-topic">Analysis</h3>
+                                <span class="status-pill">Upcoming</span>
+                                <div class="path-reveal">
+                                    <div class="path-keywords"><span class="kw">outcomes</span><span class="kw">seats</span></div>
+                                    <p class="path-ach">Reading what the models say.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="path-step right is-upcoming" style="top:1350px">
+                            <span class="path-dot" aria-hidden="true"></span>
+                            <a class="path-card" href="weeks/week-8.html">
+                                <span class="week-no">Week 8</span>
+                                <h3 class="week-topic">Visualization</h3>
+                                <span class="status-pill">Upcoming</span>
+                                <div class="path-reveal">
+                                    <div class="path-keywords"><span class="kw">maps</span><span class="kw">charts</span></div>
+                                    <p class="path-ach">Making the findings legible.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="path-step left is-upcoming" style="top:1530px">
+                            <span class="path-dot" aria-hidden="true"></span>
+                            <a class="path-card" href="weeks/week-9.html">
+                                <span class="week-no">Week 9</span>
+                                <h3 class="week-topic">Writing</h3>
+                                <span class="status-pill">Upcoming</span>
+                                <div class="path-reveal">
+                                    <div class="path-keywords"><span class="kw">narrative</span><span class="kw">caveats</span></div>
+                                    <p class="path-ach">Turning results into a report.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="path-step right is-upcoming" style="top:1710px">
+                            <span class="path-dot" aria-hidden="true"></span>
+                            <a class="path-card" href="weeks/week-10.html">
+                                <span class="week-no">Week 10</span>
+                                <h3 class="week-topic">Synthesis</h3>
+                                <span class="status-pill">Upcoming</span>
+                                <div class="path-reveal">
+                                    <div class="path-keywords"><span class="kw">synthesis</span><span class="kw">next steps</span></div>
+                                    <p class="path-ach">What it all adds up to.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© 2026 Marcy Castro Livano</span>
+            <span>MGGG Data and Democracy Lab</span>
+        </div>
+    </footer>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/lang.js"></script>
+    <script src="../js/reveal.js"></script>
+</body>
+</html>

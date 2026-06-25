@@ -1,0 +1,8 @@
+/* ===================================================================
+   fonts.css — typographic voices
+   Serif  (Lora)         → display / titles, weight 400 only, italic for subtitles
+   Sans   (Inter)        → body, 400 with 500 emphasis
+   Mono   (JetBrains)    → code only
+   =================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');

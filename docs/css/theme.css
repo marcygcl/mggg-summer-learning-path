@@ -1,0 +1,63 @@
+/* ===================================================================
+   theme.css — two calibrated palettes
+   Light = pure white for long-form legibility.
+   Dark  = soft warm near-black, desaturated/lightened accents.
+   Applied via [data-theme] on <html>. No #000 / #FFF anywhere.
+   =================================================================== */
+
+:root[data-theme="light"] {
+    --bg:             #FFFFFF;
+    --surface:        #FAF9F7;
+    --surface-raised: #FFFFFF;
+    --border:         #E8E4DD;
+    --text-primary:   #2A2A2A;
+    --text-secondary: #6B6B6B;
+    --text-muted:     #9A968E;
+    --accent:         #C2714F;
+    --accent-soft:    #F0E2DB;
+    --secondary:      #6E8B7F;
+    --secondary-soft: #E4EBE7;
+    --shadow:         0 1px 2px rgba(42, 42, 42, 0.04), 0 8px 24px rgba(42, 42, 42, 0.06);
+    --shadow-lift:    0 2px 6px rgba(42, 42, 42, 0.06), 0 16px 40px rgba(194, 113, 79, 0.14);
+    --ring:           rgba(194, 113, 79, 0.45);
+}
+
+:root[data-theme="dark"] {
+    --bg:             #161514;
+    --surface:        #1F1E1C;
+    --surface-raised: #26241F;
+    --border:         #383530;
+    --text-primary:   #ECE8E1;
+    --text-secondary: #A8A39A;
+    --text-muted:     #7A766E;
+    --accent:         #D89878;
+    --accent-soft:    #3A2B22;
+    --secondary:      #8FA89C;
+    --secondary-soft: #26302B;
+    --shadow:         0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.4);
+    --shadow-lift:    0 2px 6px rgba(0, 0, 0, 0.35), 0 16px 40px rgba(0, 0, 0, 0.5);
+    --ring:           rgba(216, 152, 120, 0.55);
+}
+
+/* Smooth, never-jarring theme transition (200ms). Colour only — no layout. */
+body,
+.site-header,
+.path-card,
+.topic-card,
+.diary-section,
+.code-cell,
+.code-toggle,
+.code-block,
+.btn,
+.reaction,
+.lang-toggle,
+.theme-toggle,
+footer {
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
